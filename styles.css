@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Base container */
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    /* centers content */
+    padding: 48px 16px;
+    /* default for smallest screens (360px) */
+}
+
+/* ≥ 800px */
+@media (min-width: 800px) {
+    .container {
+        padding: 80px 48px;
+    }
+}
+
+/* ≥ 1080px */
+@media (min-width: 1080px) {
+    .container {
+        padding: 80px 60px;
+    }
+}
+
+/* ≥ 1200px */
+@media (min-width: 1200px) {
+    .container {
+        padding: 80px;
+    }
+}
+
+/* ≥ 1440px */
+@media (min-width: 1440px) {
+    .container {
+        padding: 100px;
+    }
+}
+
+/* ≥ 1600px */
+@media (min-width: 1600px) {
+    .container {
+        padding: 100px;
+    }
+}
