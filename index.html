@@ -3,14 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div class="container">Gushwork Assignment</div>
+    <header class="header">
+        <div class="logo">Logo</div>
+        <nav class="navbar nav-links">
+            <a href="#about">About Us</a>
+            <div class="dropdown">
+                <a href="#products">Products ▾</a>
+                <div class="dropdown-content">
+                    <a href="#product1">Product 1</a>
+                    <a href="#product2">Product 2</a>
+                    <a href="#product3">Product 3</a>
+                </div>
+            </div>
+            <a class="contact-button" href="#contact">Contact Us</a>
+        </nav>
+    </header>
 
+    <section class="hero-fold-v2 container">
+        <div class="">
+            <span class="products">Products</span>
+            <span style="color: #4D545C;">></span>
+            <span class="product">Two For One Twister</span>
+        </div>
+        <div class="product-wrapper">
+            <div class="product-carousel">product-carousel</div>
+            <div class="product-specs">product-specs</div>
+        </div>
+
+    </section>
 </body>
+
 <script src="script.js"></script>
 
 </html>
