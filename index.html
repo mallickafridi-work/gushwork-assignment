@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="logo">Logo</div>
+        <div class="logo">
+            <img class="logo" src="assests\logo.png" alt="">
+        </div>
         <nav class="navbar nav-links">
             <a href="#about">About Us</a>
             <div class="dropdown">
@@ -26,19 +29,132 @@
     </header>
 
     <section class="hero-fold-v2 container">
-        <div class="">
+        <div class="product-stepper">
             <span class="products">Products</span>
-            <span style="color: #4D545C;">></span>
+            <i style="color:#4D545C" class="fa-solid fa-angle-right"></i>
             <span class="product">Two For One Twister</span>
         </div>
-        <div class="product-wrapper">
-            <div class="product-carousel">product-carousel</div>
-            <div class="product-specs">product-specs</div>
+        <div class="product-view-wrapper">
+
+            <!-- Zoom window -->
+            <div class="zoom-window"></div>
+
+            <div class="product-specs">
+                <div class="certificate-card-wrapper">
+                    <div class="certificate-card"><img width="26" height="20"
+                            src="assests\images\BIS-Hallmark-Color.png" alt="">
+                        BIS Certified</div>
+                    <div class="certificate-card"><img width="26" height="20" src="assests\images\ISI-Mark-Black.png"
+                            alt="">
+                        ISO Certified</div>
+                    <div class="certificate-card"><img width="26" height="20" src="assests\images\CE Certification.png"
+                            alt="">
+                        CE Certified</div>
+                </div>
+                <h1 class="product-name">Premium HDPE Pipes & Coils for Modern Infrastructure</h1>
+                <div class="item-features">
+                    <p class="feature"><i class="fa-solid fa-check fa-2xs"></i>Leak-Proof Fusion
+                        Joints</p>
+                    <p class="feature"><i class="fa-solid fa-check fa-2xs"></i>Chemical Resistance</p>
+                    <p class="feature"><i class="fa-solid fa-check fa-2xs"></i>50+ Year Service Life</p>
+                    <p class="feature"><i class="fa-solid fa-check fa-2xs"></i>Flexible Installation</p>
+                    <p class="feature"><i class="fa-solid fa-check fa-2xs"></i>Flexible Installation</p>
+                </div>
+                <div class="price-range-card">
+                    <p>Price Range</p>
+                    <h1>₹4,80,000 - 7,90,000</h1>
+                    <div class="shipping-info-wrapper">
+                        <div class="shipping-info">Shipping: 6-12 Days</div>
+                        <div class="shipping-info">Returns: If returned within 7 days</div>
+                    </div>
+                    <p class="certifications">Certifications: ISO Certified, BIS Certified</p>
+                </div>
+                <div class="more-details">
+                    <div class="more-button blue-button">Get Custom Quote</div>
+                    <div class="more-button">View Technical Specs ></div>
+                </div>
+            </div>
+            <div class="product-carousel">
+                <div class="image-wrapper">
+                    <img class="product-image-thumbnail" src="assests/Fishnet-Manufacturing-Image.jpg" alt="">
+                    <!-- zoom lens -->
+                    <div class="zoom-lens"></div>
+                    <button class="carousel-button-right"><i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="carousel-button-left"><i class="fa-solid fa-arrow-left"></i></button>
+                </div>
+                <div class="image-reel">
+                    <div class="reel-image"><img src="" alt=""></div>
+                    <div class="reel-image"><img src="" alt=""></div>
+                    <div class="reel-image"><img src="" alt=""></div>
+                    <div class="reel-image"><img src="" alt=""></div>
+                    <div class="reel-image"><img src="" alt=""></div>
+                    <div class="reel-image"><img src="" alt=""></div>
+                    <div class="reel-image"><img src="" alt=""></div>
+                    <div class="reel-image"><img src="" alt=""></div>
+                </div>
+            </div>
         </div>
+        <div class="trusted-brands">
+            <p>Trusted by Hundreds of Companies Globally</p>
+            <div class="brand-wrapper">
+                <div class="brand-logo"><img src="assests/brand-image.png" alt=""></div>
+                <div class="brand-logo"><img src="assests/brand-image.png" alt=""></div>
+                <div class="brand-logo"><img src="assests/brand-image.png" alt=""></div>
+                <div class="brand-logo"><img src="assests/brand-image.png" alt=""></div>
+                <div class="brand-logo"><img src="assests/brand-image.png" alt=""></div>
+                <div class="brand-logo"><img src="assests/brand-image.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <section class="fold-v2 container">
+        <div class="heading-wrapper">
+            <p class="fold-v2-title">Technical Specifications at a Glance</p>
+            <p class="fold-v2-paragraph">Comprehensive performance data demonstrating our commitment to quality and
+                engineering excellence.</p>
+        </div>
+        <div class="tech-specs-table">
+
+            <p class="cell-head">PARAMETER</p>
+            <p class="cell-head">SPECIFICATIONS</p>
+
+            <p class="cell">Pipe Diameter Range</p>
+            <p class="cell">20mm to 1600mm (3/4” to 63”)</p>
+
+            <p class="cell">Pressure Ratings</p>
+            <p class="cell">PN 2.5, PN 4, PN 6, PN 8, PN 10, PN 12.5, PN 16</p>
+
+            <p class="cell">Standard Dimension Ratio</p>
+            <p class="cell">SDR 33, SDR 26, SDR 21, SDR 17, SDR 13.6, SDR 11</p>
+
+            <p class="cell">Operating Temperature</p>
+            <p class="cell">-40C to +80C (-40F to +176F)</p>
+
+            <p class="cell">Service Life</p>
+            <p class="cell">50+ Years (at 20 degrees C, PN 10)</p>
+
+            <p class="cell">Material Density</p>
+            <p class="cell">0.95 - 0.96 g/cm3</p>
+
+            <p class="cell">Certification Standards</p>
+            <p class="cell">IS 5984, ISO 4427, ASTM D3035</p>
+
+            <p class="cell">Joint Type</p>
+            <p class="cell">Butt Fusion, Electrofusion, Mechanical</p>
+
+            <p class="cell">Coil Lengths</p>
+            <p class="cell">Up to 500mm (for smaller diameters)</p>
+
+            <p class="cell">Country of Origin</p>
+            <p class="cell">India</p>
+
+        </div>
+        <button class="download-button">
+            Download Full Technical Datasheet
+        </button>
 
     </section>
 </body>
-
+<script src="https://kit.fontawesome.com/1041460bdc.js" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 
 </html>
