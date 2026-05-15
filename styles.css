@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -10,8 +12,10 @@ body {
 
 :root {
   --Colors-Neutral-white: #FFFFFF;
+}
+
+body {
   font-family: 'Inter', sans-serif;
-  /* Figma font */
 }
 
 /* Base container (≤360px default) */
@@ -111,9 +115,6 @@ body {
 
 .hero-fold-v2 {
   background-image: url(assests/background-noise.png);
-  display: flex;
-  flex-direction: column;
-  gap: 56px;
 }
 
 /* Product stepper */
@@ -129,14 +130,6 @@ body {
 
 .product-stepper .product {
   font-size: 14px;
-}
-
-/* Product wrapper */
-.product-view-wrapper {
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-  gap: 56px;
 }
 
 /* Product specs */
@@ -225,7 +218,7 @@ body {
   gap: 4px;
 }
 
-.more-details .more-button {
+.more-button {
   border: 1px solid #2B3990;
   padding: 16px 24px;
   border-radius: 12px;
@@ -352,12 +345,16 @@ body {
   width: 122px;
 }
 
+.hero-fold-v2,
+.product-view-wrapper,
 .fold-v2 {
   display: flex;
   flex-direction: column;
+  gap: 56px;
+}
+
+.fold-v2 {
   background: #111827;
-  gap: 3.5rem;
-  /* 56px */
 }
 
 .heading-wrapper {
@@ -418,9 +415,6 @@ body {
 
 .download-button {
   align-self: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 16px 20px;
 
   width: 325px;
@@ -428,17 +422,164 @@ body {
 
   border: 1px solid #FFFFFF;
   border-radius: 12px;
-  
+
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
 
-  background: #111827;
+  background-color: #111827;
   color: #FFFFFF;
+  cursor: pointer;
 
 }
 
+.more-button,
+.download-button,
+.download-brochure-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.more-button {
+  border: 1px solid #2B3990;
+  padding: 16px 24px;
+  border-radius: 12px;
+}
+
+.blue-button {
+  background-color: #2B3990;
+  color: white;
+}
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  /* blur everything behind */
+  display: none;
+  /* hidden by default */
+  align-items: center;
+  justify-content: center;
+  z-index: 1200;
+}
+
+/* Modal box */
+.modal {
+  position: relative;
+  background: white;
+  border-radius: 8px;
+  width: 40%;
+  overflow: hidden;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  right: 2%;
+  top: 8%;
+  font-size: 16px;
+  cursor: pointer;
+
+  text-align: center;
+  align-items: center;
+
+  width: 28px;
+  height: 28px;
+
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+.modal-heading {
+  width: 100%;
+  margin: 0;
+  padding: 16px 24px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  border-bottom: 1px solid #E5E7EB;
+
+}
+
+.modal-body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 24px;
+  width: 100%;
+  gap: 16px;
+}
+
+.input-body {
+  width: 100%;
+}
+
+.modal-body-paragraph {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0px;
+  font-size: 12px;
+}
+
+.modal-body-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 12px;
+
+  width: 100%;
+  height: 40px;
+
+  background: #FFFFFF;
+  border: 1px solid #E1E3E8;
+  box-shadow: 0px 1px 2px rgba(10, 13, 20, 0.03);
+  border-radius: 8px;
+
+}
+
+.download-button-wrapper {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 11px 16px;
+
+  width: 100%;
+  height: 56px;
+
+  background: #F9FAFB;
+  border-top: 1px solid #E5E7EB;
+
+}
+
+.download-brochure-btn {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 8px;
+
+  width: 156px;
+  height: 34px;
+  color: white;
+  border-radius: 8px;
+  border: 0px solid none;
+
+}
 
 /* ≥ 360px → show navbar */
 @media (min-width: 360px) {

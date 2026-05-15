@@ -148,11 +148,32 @@
             <p class="cell">India</p>
 
         </div>
-        <button class="download-button">
+        <button id="openModal" class="download-button">
             Download Full Technical Datasheet
         </button>
-
     </section>
+    <!-- Modal structure -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <div class="close-button-wrapper">
+                <button class="close-btn" id="closeModal">x</button>
+            </div>
+            <h2 class="modal-heading">Let us email the entire catalogue to you</h2>
+            <div class="modal-body">
+                <div class="input-body">
+                    <p class="modal-body-paragraph">Your Email</p>
+                    <input class="modal-body-input" type="text" placeholder="example@gmail.com">
+                </div>
+                <div class="input-body">
+                    <p class="modal-body-paragraph">Your Contact (Optional)</p>
+                    <input class="modal-body-input" type="text" placeholder="+91-0000000000">
+                </div>
+            </div>
+            <div class="download-button-wrapper">
+                <button class="download-brochure-btn">Download Brochure</button>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="https://kit.fontawesome.com/1041460bdc.js" crossorigin="anonymous"></script>
 <script src="script.js"></script>

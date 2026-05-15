@@ -80,3 +80,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+const openBtn = document.getElementById("openModal");
+const closeBtn = document.getElementById("closeModal");
+const overlay = document.getElementById("modalOverlay");
+
+openBtn.addEventListener("click", () => {
+    overlay.style.display = "flex"; // show modal
+});
+
+closeBtn.addEventListener("click", () => {
+    overlay.style.display = "none"; // hide modal
+});
+
+// Optional: close when clicking outside modal
+overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) {
+        overlay.style.display = "none";
+    }
+});
